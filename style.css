@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.top-0 {
+    top: o;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.clearfix {
+    clear: both;
+    display: flow-root;
+    content: " ";
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+.inline-table{
+    display: inline-table;
+}
+.text-1{
+    font-size: 1.6rem;
+}
+
+.text-2{
+    font-size: 2rem;
+}
+
+.text-3{
+    font-size: 3rem;
+}
+
+.text-4{
+    font-size: 4rem;
+}
+.w-32{
+    width: 32%;
+}
+.txt-center{
+    text-align: center;
+}
+.bg-color{
+    background-color:rgb(191 239 239);;
+}
+.ml-2{
+    margin-left: 2rem;
+}
+.p-1{
+    padding: 1rem 0rem;
+}
+header{
+    font-family: 'Teko', sans-serif;
+    background-color: black;
+    color: white;
+}
+article{
+    height: calc(100vh - 54px);
+    padding: 2rem 4rem;
+}
