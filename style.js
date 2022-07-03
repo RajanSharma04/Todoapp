@@ -1,9 +1,8 @@
 function todo() {
-    let TextBox = document.querySelector('.textbox');
-    let Button = document.querySelector('.add-btn');
-    let addli = document.querySelector('.ul-list');
-    let Start=document.createElement("Button");
-    let Text= document.createElement("Li");
+    const TextBox = document.querySelector('.textbox');
+    const addli = document.querySelector('.ul-list'); 
+    const Text= document.createElement("Li");
+    const checkbtn = document.createElement("button");
     if(TextBox.value===''){
         alert("please enter task");
     }
@@ -12,14 +11,29 @@ function todo() {
         
         Text.append(document.createTextNode(TextBox.value));
         addli.append(Text);
+       TextBox.value = ' ';
     }
 
-        let clear = document.createElement("Button");
+        const clear = document.createElement("Button");
         clear.append(document.createTextNode("Delete"));
-        clear.style.marginLeft = '10px';
         Text.append(clear);
         clear.addEventListener('click', function () {
         Text.remove();
+
     });
-    
-}
+    const start = document.createElement("Button");
+    const startbtn = document.createTextNode("Start");
+    start.append(startbtn);
+    Text.append(start);    
+    start.addEventListener('click', function(){
+        const progress = document.querySelector(".progress-ul");
+        progress.append(Text); 
+        Text.append(checkbtn);
+    });
+    checkbtn.append(document.createTextNode("Done"));
+
+    checkbtn.addEventListener('click',function(){
+        let complete = document.querySelector('.complete-ul');
+        complete.append(Text);
+        });
+};
