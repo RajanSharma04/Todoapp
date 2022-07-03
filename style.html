@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,23 @@
             <h1>Projects</h1>
             <section class="task-box w-32 inline-table bg-color txt-center">
                 <h2 class="text-2">Todo</h2>
-                <input type="text" name="name" id="textbox" required placeholder=" Add Task">
-                <button type="button" id="btn2">ADD</button>
-                <ul id="addli">
-            
+                <input type="text"class="textbox" placeholder="Add Task">
+                <button type="button" class="add-btn" onclick="todo()" id="button">Add</button>
+                <ul class="ul-list">
+
                 </ul>
             </section>
             <section class="progress-box w-32 inline-table bg-color ml-2 txt-center">
                 <h2 class="text-2">In Progress</h2>
+                <ul>
+
+                </ul>
             </section>
             <section class="complete-box w-32 inline-table bg-color ml-2 txt-center">
                 <h2 class="text-2">completed</h2>
+                <ul>
+
+                </ul>
             </section>
         </article>
     </main>

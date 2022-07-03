@@ -12,7 +12,6 @@ body {
 }
 
 body {
-    overflow: auto;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -104,7 +103,7 @@ header{
     color: white;
 }
 article{
-    height: calc(100vh - 54px);
+    /* height: calc(100vh - 54px); */
     padding: 2rem 4rem;
 }
 section{
@@ -118,7 +117,7 @@ ul li{
     margin-top: 1rem;
     padding: 1rem;
 }
-#textbox{
+.textbox{
     width: 90%;
     padding: 1rem;
     border-radius: 1rem;
@@ -127,7 +126,7 @@ ul li{
     text-align: center;
 }
 
-#btn2{
+.add-btn{
     width: 94%;
     margin-top: 1rem;
     padding: 0.5rem;
