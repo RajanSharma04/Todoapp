@@ -109,12 +109,13 @@ article{
 section{
     border-radius: 0.5rem;
     height: 80vh;
+    margin-top: 1rem;
 }
 ul li{
     list-style: none;
     font-size: 3rem;
     background-color: rgb(255 255 255);
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     padding: 1rem 1rem;
     margin-top: 1rem;
@@ -127,6 +128,7 @@ ul li{
     border: none;
     outline: none;
     text-align: center;
+    font-size: 2rem;
 }
 
 .add-btn{
@@ -137,6 +139,15 @@ ul li{
     border: none;
     border-radius: 1rem;
     background-color: black;
-    color: white;
+    color: white;  
+}
+
+ ul button{
+    border: none;
+    margin-left: 20px;
+    background-color:white;
+    vertical-align: middle;
+   
     
+     
 }
