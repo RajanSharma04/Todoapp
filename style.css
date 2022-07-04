@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .float-left {
@@ -83,13 +83,13 @@ body {
     font-size: 4rem;
 }
 .w-32{
-    width: 32%;
+    width: 30%;
 }
 .txt-center{
     text-align: center;
 }
 .bg-color{
-    background-color: rgb(214, 214, 252);
+    background-color:#f5f9fa;
 }
 .ml-2{
     margin-left: 2rem;
@@ -103,20 +103,20 @@ header{
     color: white;
 }
 article{
-    /* height: calc(100vh - 54px); */
     padding: 2rem 4rem;
 }
 section{
     border-radius: 0.5rem;
-    height: 80vh;
-    margin-top: 1rem;
+    height: 70vh;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+
 }
 ul li{
     list-style: none;
     font-size: 3rem;
     background-color: rgb(255 255 255);
-    max-width: 80%;
-    margin: auto;
+    width: 89%;
     padding: 1rem 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
@@ -126,28 +126,35 @@ ul li{
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
 }
 
 .add-btn{
-    width: 94%;
+    width: 96%;
     margin-top: 1rem;
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     border-radius: 1rem;
-    background-color: black;
-    color: white;  
+    background-color: rgb(232 242 241);;
+    color: #4db194;  
 }
 
  ul button{
     border: none;
     margin-left: 20px;
-    background-color:white;
-    vertical-align: middle; 
+    float: right;
+    margin-top: 0.5rem;
+    background: rgb(232 242 241);
+    color: rgb(77 177 148);
+    padding: 0.5rem;
 }
 .complete-ul li{
     text-decoration: line-through;
     opacity: 0.4;
+}
+button:hover{
+    color: white;
+    background-color: rgb(66, 63, 63);
 }

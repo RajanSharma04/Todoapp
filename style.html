@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,24 +20,25 @@
     <main>
         <article>
             <h1 class="text-3">Projects</h1>
+            <section class="task-box w-32 inline-table bg-color">
+                <h2 class="text-2">Todo</h2>
+                <div id="clicks">
 
-            <section class="task-box w-32 inline-table bg-color txt-center">
-                    <h2 class="text-2">Todo</h2>
+                </div>
                 <input type="text" class="textbox" placeholder="Add Task">
                 <button type="button" class="add-btn" onclick="Task()" id="button">Add</button>
                 <ul class="ul-list">
 
                 </ul>
-
             </section>
-            <section class="progress-box w-32 inline-table bg-color ml-2 txt-center">
+            <section class="progress-box w-32 inline-table bg-color ml-2">
                 <h2 class="text-2">In Progress</h2>
                 <ul class="progress-ul">
 
                 </ul>
             </section>
-            <section class="complete-box w-32 inline-table bg-color ml-2 txt-center">
-                <h2 class="text-2">completed</h2>
+            <section class="complete-box w-32 inline-table bg-color ml-2">
+                <h2 class="text-2">Completed</h2>
                 <ul class="complete-ul">
 
                 </ul>
