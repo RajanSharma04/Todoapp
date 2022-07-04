@@ -3,21 +3,19 @@ function Task() {
     const addli = document.querySelector('.ul-list'); 
     const Text= document.createElement("Li");
     
-    if(TextBox.value ===' '){
+    if(TextBox.value==''){
         alert("Sorry Enter Task");
     }
     else
     {
-        
         Text.append(document.createTextNode(TextBox.value));
         addli.append(Text);
-        TextBox.value = ' ';
+        TextBox.value = '';
     }
-
         const clear = document.createElement("Button");
         clear.append(document.createTextNode("Delete"));
         Text.append(clear);
-        clear.addEventListener('click', function () {
+        clear.addEventListener('click', function(){
         Text.remove();
     });
 
@@ -44,4 +42,4 @@ function Task() {
         Donebtn.style.display = 'none';
         alert('Task done')
         });
-};
+  };

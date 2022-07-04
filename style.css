@@ -126,7 +126,6 @@ ul li{
     padding: 1rem;
     border-radius: 1rem;
     border: none;
-    outline: none;
     text-align: center;
     font-size: 2rem;
 }
@@ -147,4 +146,8 @@ ul li{
     margin-left: 20px;
     background-color:white;
     vertical-align: middle; 
+}
+.complete-ul li{
+    text-decoration: line-through;
+    opacity: 0.4;
 }
