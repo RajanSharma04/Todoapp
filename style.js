@@ -3,16 +3,6 @@ function Task() {
     let addli = document.querySelector('.ul-list');
     let Text = document.createElement("Li");
     let btn =document.querySelector('.add-btn');
-    let resetbtn = document.createElement("button");
-    let click = document.querySelector('#clicks')
-    let i = 1;
-    let temp=0;
-    btn.addEventListener('click',function(){
-      
-        i++;
-    });
-    click.textContent= i;
-        
     
     if (TextBox.value == '') {
         alert("Sorry Enter Task");
@@ -54,11 +44,3 @@ function Task() {
     }
     
 };
-
-
-// let resetbtn = document.createElement("button");
-// resetbtn.append(document.createTextNode('Reset'));
-// Text.append(resetbtn);
-// resetbtn.addEventListener('click', function () {
-//     addli.append(Text);
-// });
