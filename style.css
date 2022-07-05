@@ -158,3 +158,10 @@ button:hover{
     color: white;
     background-color: rgb(66, 63, 63);
 }
+.clicks{
+    display: inline;
+    float: right;
+    margin-right: 2rem;
+    color: black;
+    font-size: 2rem;
+}
