@@ -1,16 +1,17 @@
 function Task() {
+
     let TextBox = document.querySelector('.textbox');
     let addli = document.querySelector('.ul-list');
     let Text = document.createElement("Li");
-    let btn =document.querySelector('.add-btn');
-    
     if (TextBox.value == '') {
         alert("Sorry Enter Task");
+
     }
     else {
         Text.append(document.createTextNode(TextBox.value));
         addli.append(Text);
-       
+        i+=1;
+        click.innerHTML = i; 
         TextBox.value = '';
 
         let clear = document.createElement("Button");
@@ -18,8 +19,13 @@ function Task() {
         Text.append(clear);
         clear.addEventListener('click', function () {
             Text.remove();
+            if(i>0){
+              i--;
+            click.innerHTML=i;   
+            }
+           
         });
-        const start = document.createElement("Button");
+        let start = document.createElement("Button");
         let startbtn = document.createTextNode("Start");
         start.append(startbtn);
         Text.append(start);
@@ -28,6 +34,8 @@ function Task() {
             progress.append(Text);
             start.style.display = 'none';
             Text.append(Donebtn);
+            i--;
+            click.innerHTML=i; 
         });
 
 
@@ -42,5 +50,11 @@ function Task() {
         });
 
     }
-    
 };
+let btn =document.querySelector('.add-btn');
+let click = document.querySelector('.clicks')
+let i=0;
+btn.addEventListener('click',function(){
+      
+});
+ 
