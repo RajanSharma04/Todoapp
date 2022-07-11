@@ -11,7 +11,7 @@ function add(text) {
 
 var maintext = document.querySelector('.textbox');
 var form = document.querySelector('.Form');
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit',function (event) {
     event.preventDefault();
     var text = maintext.value.trim();
     if (text == '') {
@@ -28,11 +28,11 @@ form.addEventListener('submit', function (event) {
 
 function show() {
     var progress = document.querySelector(".progress-ul");
-    progress.innerHTML = '';
+    progress.innerHTML = ' ';
     var addli = document.querySelector('.ul-list');
-    addli.innerHTML = '';
+    addli.innerHTML = ' ';
     let complete = document.querySelector('.complete-ul');
-    complete.innerHTML = "";
+    complete.innerHTML = ' ';
     
     for (i = 0; i < todo.length; i++) {
         let litext = document.createElement("li");
@@ -46,14 +46,11 @@ function show() {
         else if (todo[i].status === 1) {
             progress.append(litext);
             deletetodo(litext);
-            donetodo(litext);
-           
+            donetodo(litext);   
         }
         else if (todo[i].status === 2){
             complete.append(litext);
             deletetodo(litext);
-
-
         }
     }
 }
@@ -73,14 +70,12 @@ function deletetodo(litext) {
 }
 function starttodo(litext) {
     let start = document.createElement("Button");
-    let startbtn = document.createTextNode("Start");
-    start.append(startbtn);
+    start.append(document.createTextNode("Start")); 
     litext.append(start);
     start.addEventListener('click', function () {
         let startli = litext.getAttribute('id');
         todo[todo.findIndex(Todoid => Todoid.id == startli)].status=1;
         show();
-       
     });
 }
 function donetodo(litext){
@@ -92,12 +87,9 @@ function donetodo(litext){
         todo[todo.findIndex(Todoid => Todoid.id == startli)].status=2;
         show();
         console.log(todo);
-
     })
 }
 let btn = document.querySelector('.add-btn');
 let click = document.querySelector('.clicks')
 let i = 0;
-btn.addEventListener('click', function () {
 
-});
